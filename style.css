@@ -1,0 +1,277 @@
+/**
+ * Folha de estilo do site HTMl5 e CSS3
+ * @author Professor José de Assis
+ */
+
+/********************* Importação *******************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/******************** Padronização ******************/
+* {
+    padding: 0;
+    margin: 0;       
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em; /* padronização do tamanho da fonte aos diversos dispositivos */
+}
+
+/* O bloco de código abaixo adapta automaticamente o tamanho das imagens a tela */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* O bloco abaixo centraliza as camadas do site */
+.Layout {
+    /* background-color: #ffff00; */
+    margin: 0 auto;
+    max-width: 1140px;     
+}
+
+/* O bloco abaixo é usado para criar colunas flexiveis*/
+.Flex {
+    display: flex;
+    flex-wrap: wrap;  /*agrupar automaticamente*/
+}
+
+
+/******************** Cabeçalho **********************/
+header {
+    height: 160px;
+}
+
+#logo {
+    float: left;
+}
+
+#logo img {
+    margin-top: 30px;   
+}
+
+nav {
+    float: right;
+    margin: 100px 30px 0px 0px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    padding-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul li a:hover {
+    color: #ed2404;
+}
+
+/******************* Banner *******************/
+main {
+    background: url(imagens/banner.jpg);
+    height: 400px; /*altura do banner*/
+    background-size: cover; /*ajusta a imagem ao tamanho da tela */
+    /*técnica usada para centralizar o conteúdor*/
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    color: #ffffff;    
+    font-size: 7em;
+    /* criar uma sombra no texto */
+    text-shadow: #000000 0.05em 0.05em 0.05em;
+}
+
+/************* Conteúdo (Sobre) **************/
+#sobre {
+    /*background-color: #ff0000;*/
+    padding: 50px 0px 50px 0px;
+    background: url(imagens/fundo.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#destaque {
+    /*background-color: #ffff00;*/
+    flex: 45%;
+    text-align: center;   
+}
+
+#destaque img {
+    border-radius: 50%;
+}
+
+#textoDestaque {
+    /*background-color: #00ffff;*/
+    flex: 55%;
+    color: #ffffff;   
+}
+
+#textoDestaque h2 {
+    margin: 30px 0px 0px 30px;
+}
+
+#textoDestaque p {
+    margin: 10px 30px 0px 30px;
+    font-weight: 600;
+    margin-bottom: 40px;   
+}
+
+#textoDestaque a {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #ed2404;
+    color: #ffffff;
+    padding: 10px 40px 10px 40px;
+    border-radius: 25px;
+    margin-left: 30px;
+}
+
+/************* Conteúdo (Breakpoint) **************/
+#break {    
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+}
+
+#break h2 {
+    margin-bottom: 30px;
+}
+
+
+/************* Conteúdo (Wireframe) **************/
+#wireframe {
+    /*background-color: #ff0000;*/
+    padding: 50px 0px 50px 50px;
+    background: url(imagens/fundo.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#textoWireframe {
+    flex: 70%;    
+}
+
+#textoWireframe h2 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+#textoWireframe p {
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+#textoWireframe a {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #ed2404;
+    color: #ffffff;
+    padding: 10px 40px 10px 40px;
+    border-radius: 25px;  
+}
+
+#imagemWireframe {
+    text-align: center;
+    flex: 30%;
+}
+
+/************* Conteúdo (Box) **************/
+#box {    
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+}
+
+#box h2 {
+    margin-bottom: 30px;
+}
+
+/************* Contato **************/
+#contato {
+    padding: 50px 0px 50px 50px;
+    background-color: #434343;    
+}
+
+#formulario {   
+    flex: 30%;    
+}
+
+#formulario h2 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#formulario input[type=text]{
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px; /*arredondar os cantos*/
+}
+
+#formulario textarea {
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px 10px 40px 10px;
+    resize: none;
+}
+
+#formulario input[type=submit]{
+    font-size: 1.05em;
+    font-weight: 700;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 10px 25px 10px 25px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+#fone {    
+    flex: 20%;
+    padding-left: 80px;
+}
+
+#fone p {
+    margin-bottom: 20px;
+    color: #ffffff;    
+}
+
+#mapa {
+    
+    flex: 30%;
+}
+
+/************* Rodapé **************/
+footer {
+    background-color: #1e1e1e;
+    height: 100px;
+}
+
+#copyright {
+    float: left;
+}
+
+#copyright p {
+    color: #f1f1f1;
+    margin-top: 40px;
+}
+
+#social {
+    float: right;
+    margin-top: 27px;
+}

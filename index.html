@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- a linha abaixo adapta o site aos diversos dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compatibilizar com o internet explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Inserir um ícone favorito -->
+    <link rel="icon" href="imagens/favicon.png">
+    <!-- A linha abaixo faz a ligação com a folha de estilo-->
+    <link rel="stylesheet" href="style.css">
+    <title>HTML5 e CSS3</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Layout -->
+        <div class="Layout">
+            <!-- Logotipo -->
+            <div id="logo">
+                <img src="imagens/logo.png" alt="logotipo">
+            </div>
+            <!-- Menu -->
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Conteúdo</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Banner -->
+    <main>
+        <div class="Layout">
+            <h1>HTML5 e CSS3</h1>
+        </div>
+    </main>
+    <!-- sobre -->
+    <section id="sobre">
+        <div class="Layout Flex">
+            <!-- Imagem de destaque -->
+            <div id="destaque">
+                <img src="imagens/computador.jpg" alt="computador">
+            </div>
+            <!-- texto de destaque -->
+            <div id="textoDestaque">
+                <h2>Aprender na prática</h2>
+                <p>Aprenda HTML5 e CSS3 de forma prática e divertida desenvolvendo passo a passo um site responsivo. Clique no botão para ter acesso ao material de apoio deste projeto.</p>
+                <a href="http://" target="_blank">Saiba +</a>            
+            </div>
+        </div>
+    </section>
+    <!-- Conteúdo -->
+    <section id="break">
+        <div class="Layout">
+            <h2>BREAKPOINTS</h2>
+            <img src="imagens/quebra.png" alt="Pontos de quebra">
+        </div>
+    </section>
+    <!-- Conteúdo -->
+    <section id="wireframe">
+        <div class="Layout Flex">
+            <!-- Texto do conteúdo -->
+            <div id="textoWireframe">
+                <h2>Wireframe</h2>
+                <p>Wireframe é uma representação visual da estrutura básica de uma página. Ele deve ser feito da maneira
+                    mais simples possível, mostrando apenas o essencial, como uma espécie de rascunho, sem cores ou imagens. Clique no botão ou escaneie o QR Code para obter o wireframe desta página.</p>
+                <a href="wireframe.pdf" target="_blank">Saiba +</a>
+            </div>
+            <!-- Imagem do conteúdo -->
+            <div id="imagemWireframe">
+                <img src="imagens/qrcode.png" alt="qrcode">
+            </div>
+        </div>
+    </section>
+    <!-- Conteúdo -->
+    <section id="box">
+        <div class="Layout">
+            <h2>BOX MODEL CSS</h2>
+            <img src="imagens/boxmodel.png" alt="box model css">
+        </div>
+    </section>
+    <!-- Contato -->
+    <section id="contato">
+        <div class="Layout Flex">            
+            <!-- Formulário de contato -->
+            <div id="formulario">
+                <h2>Contato</h2>
+                <form action="formulario.php">
+                    <input type="text" name="nome" placeholder="Nome">
+                    <input type="text" name="fone" placeholder="E-mail">
+                    <textarea name="mensagem" placeholder="Mensagem"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <!-- Telefones de contato -->
+            <div id="fone">
+                <img src="imagens/fone.png" alt="telefone">
+                <p>(11) 99999-9999</p>
+                <img src="imagens/whatsapp.png" alt="whatsapp">
+                <p>(11) 99999-9999</p>
+                <img src="imagens/endereco.png" alt="Endereço">
+                <p>R. Cel. Luís Americano, 130</p>
+                <img src="imagens/email.png" alt="email">
+                <p>email@email.com</p>
+            </div>
+            <!-- Google Maps -->
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7660025901655!2d-46.57715888538445!3d-23.540917166721904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ec26cfdcfed%3A0x49e7eb66fd4f1f2!2sSenac%20Tatuap%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1619179114506!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer>
+        <div class="Layout">
+            <!-- Copyright -->
+            <div id="copyright">
+                <p>©2021 - Professor José de Assis</p>
+            </div>
+            <!-- Redes sociais -->
+            <div id="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="imagens/face.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.png" alt="instagram"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="imagens/twitter.png" alt="twitter"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="imagens/youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
